@@ -69,15 +69,15 @@ function opensubTab(event, tabName) {
     }
 
     function calculate_cylindree() {
-        var D1 = parseFloat(document.getElementById("D1").value);
+        var D = parseFloat(document.getElementById("D").value);
         var L = parseFloat(document.getElementById("L").value);
         var N = parseFloat(document.getElementById("N").value);
 
         // Perform calculation using the cylindree inputs
-        var Cylindree_u = 3.14*(D1*D1)*L/4/1e6 ;
-        var Cylindree_t = 3.14*(D1*D1)*L*N/4/1e6 ;
-        var Cylindree_t_c_e = 3.14*(D1*D1)*L*N*1.7/4/1e6 ;
-        var Cylindree_t_c_d = 3.14*(D1*D1)*L*N*1.5/4/1e6 ;
+        var Cylindree_u = 3.14*(D*D)*L/4/1e6 ;
+        var Cylindree_t = 3.14*(D*D)*L*N/4/1e6 ;
+        var Cylindree_t_c_e = 3.14*(D*D)*L*N*1.7/4/1e6 ;
+        var Cylindree_t_c_d = 3.14*(D*D)*L*N*1.5/4/1e6 ;
 
         // Display the result
         document.getElementById("Cylindree_u").innerHTML = "Cylindrée Unitaire (L) : " + Cylindree_u.toFixed(2);

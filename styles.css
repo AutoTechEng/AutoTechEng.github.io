@@ -1,12 +1,17 @@
 
+@font-face {
+  font-family: "font-1";
+  src: url(./assets/LibreBaskerville-Regular.ttf);
+}
+
 header{
 margin-bottom: 0px;
 }
 
 body {
   width: 97%;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   text-align: center;
   font-family: "font-1", cursive;
 }
@@ -16,7 +21,10 @@ h1 {
   margin: 0px 0px 8px;
 }
 input {
-  border: none;
+  background-color: rgb(241, 236, 236);
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
   border-radius: 5px 5px 5px 5px;
   outline: none;
   text-align: center;
@@ -24,26 +32,31 @@ input {
   cursor: pointer;
   font-family: "font-1", cursive;
   margin: 0px 0px;
-  width: 70%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 900px;
   padding: 10px 0px;
   margin-bottom: 2px;
   margin-top: 2px;
 }
 input::placeholder {
   text-align: center;
-  font-size: 12px;
+  font-size: mediumpx;
 }
 .calculate-button {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
   background-color: green;
   font-weight: 700;
-  color: white;
-  padding: 10px 0px;
+  font-size: medium;
+  color: black;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  width:  70%;
-  max-width: 600px;
-  border: none;
+  margin: 0px 0px;
+  width: 100%;
+  max-width: 900px;
+  padding: 10px 0px;
+  margin-bottom: 2px;
   margin-top: 2px;
   }
 img {
@@ -55,8 +68,8 @@ img {
 }
 .image1 {
   object-fit: cover;
-  width: 70%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 900px;
   margin-bottom: 2px;
   border-radius: 8px;
 }
@@ -76,7 +89,7 @@ p {
   object-fit: cover;
   font-weight: 400;
   font-size: 18px;
-  color: white;
+  color: black;
   margin-left: auto;
   margin-right: auto;
 
@@ -108,7 +121,7 @@ p {
 }
 .tabContainer .tabPanel{
     height: 100%;
-    color: white;
+    color:black;
     text-align: center;
     padding-top: 10px;
     box-sizing: border-box;
@@ -122,7 +135,7 @@ p {
   height: 200px;
 }
 .subtabContainer .subbuttonContainer{
-  height: 15%;
+  height: 18%;
 }
 .subtabContainer .subbuttonContainer button{
   width: 25%;
@@ -135,7 +148,7 @@ p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 12px;
   background-color: #eee;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 0px;
 }
 .subtabContainer .subbuttonContainer button:hover{
