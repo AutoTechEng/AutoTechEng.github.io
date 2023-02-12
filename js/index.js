@@ -106,9 +106,9 @@ function opensubTab(event, tabName) {
 
 
         // Display the result
-        document.getElementById("Vcul").innerHTML = "Volume Culasse (cm3) : " + Vcul.toFixed(2) + ":1";
-        document.getElementById("Vpist").innerHTML = "Volume piston (cm3) : " + Vpist.toFixed(2) + ":1";
-        document.getElementById("Vjoint").innerHTML = "Volume joint (cm3) : " + Vjoint.toFixed(2) + ":1";
+        document.getElementById("Vcul").innerHTML = "Volume Culasse (cm3) : " + Vcul.toFixed(2) ;
+        document.getElementById("Vpist").innerHTML = "Volume piston (cm3) : " + Vpist.toFixed(2) ;
+        document.getElementById("Vjoint").innerHTML = "Volume joint (cm3) : " + Vjoint.toFixed(2) ;
         document.getElementById("Taux_C").innerHTML = "Taux de compression : " + Taux_C.toFixed(2) + ":1";
     }
 
