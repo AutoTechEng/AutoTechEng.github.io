@@ -22,17 +22,17 @@ h1 {
 }
 input {
   background-color: rgb(241, 236, 236);
-  border-width: 3px;
+  border-width: 30%;
   border-style: solid;
   border-color: black;
   border-radius: 5px 5px 5px 5px;
   outline: none;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 60%;
   cursor: pointer;
   font-family: "font-1", cursive;
   margin: 0px 0px;
-  width: 100%;
+  width: 90%;
   max-width: 900px;
   padding: 10px 0px;
   margin-bottom: 2px;
@@ -43,7 +43,7 @@ input::placeholder {
   font-size: mediumpx;
 }
 .calculate-button {
-  border-width: 3px;
+  border-width: 30%;
   border-style: solid;
   border-color: black;
   background-color: green;
@@ -53,7 +53,7 @@ input::placeholder {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   margin: 0px 0px;
-  width: 100%;
+  width: 90%;
   max-width: 900px;
   padding: 10px 0px;
   margin-bottom: 2px;
@@ -68,7 +68,7 @@ img {
 }
 .image1 {
   object-fit: cover;
-  width: 100%;
+  width: 90%;
   max-width: 900px;
   margin-bottom: 2px;
   border-radius: 8px;
@@ -81,14 +81,15 @@ img {
   border-radius: 8px;
 }
 h2 {
+  color: black;
   margin-top: 5px ;
   margin-bottom: 5px ;
-  font-size: 20px;
+  font-size: medium;
 }
 p {
   object-fit: cover;
   font-weight: 400;
-  font-size: 18px;
+  font-size: large;
   color: black;
   margin-left: auto;
   margin-right: auto;
