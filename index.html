@@ -29,7 +29,7 @@
 
     <main>
         <div id="Tab1" class="tabPanel">
-            <h2>Manuel des Commissaires Techniques </h2>
+            <h3>Manuel des Commissaires Techniques Intéractif </h3>
             <p> Cette application a pour but d'assister les commissaires dans la réalisation des vérifications techniques. Il s'agit d'un manuel du commissaire technique intéractif ou les calculs sont automatisés</p>
             <img class="image2" src="./assets/img/Manuel-01.png" alt="Manuel-01">
             <img class="image2" src="./assets/img/Manuel-02.png" alt="Manuel-02">
@@ -99,7 +99,8 @@
                 </div>
         
                 <div id="subTab1" class="subtabPanel">
-                    <h2> Methode 1 : Avec becs exterieurs</h2>
+                    <br><h3> Vérification de l'entraxe de bielle</h3>
+                    <p> Methode 1 : Avec becs exterieurs</p>
                     <img class="image1" src="./assets/img/bielle1.PNG" alt="bielle">
                     <form>
                         <input type="text" placeholder="Diamètre intérieur - pied de bielle d (mm)" id="d1"><br>
@@ -107,9 +108,9 @@
                         <input type="text" placeholder="Longueur interieur L1 (mm)" id="L1"><br>
                         <button type="button" onclick="calculate_bielle1()" class="calculate-button">Calculer</button>
                     </form>
-                    <p id="Entraxe1"></p>
+                    <h4 id="Entraxe1"></h4>
 
-                    <h2> Methode 2 : Avec becs intérieurs</h2>
+                    <p> Methode 2 : Avec becs intérieurs</p>
                     <img class="image1" src="./assets/img/bielle2.PNG" alt="bielle">
                     <form>
                         <input type="text" placeholder="Diamètre intérieur - pied de bielle d (mm)" id="d2"><br>
@@ -117,12 +118,12 @@
                         <input type="text" placeholder="Longueur interieur L2 (mm)" id="L2"><br>
                         <button type="button" onclick="calculate_bielle2()" class="calculate-button">Calculer</button>
                     </form>
-                    <p id="Entraxe2"></p>
+                    <h4 id="Entraxe2"></h4>
                     <br>
                 </div>
 
                 <div id="subTab2" class="subtabPanel">
-                    <h2> Calcul de la cylindrée moteur</h2>
+                    <h3> Vérification de la cylindrée moteur</h3>
                     <img class="image1" src="./assets/img/Course.PNG" alt="course">
                     <form>
                         <input type="text" placeholder="Diamètre intérieur du cylindre - D (mm)" id="D"><br>
@@ -130,15 +131,15 @@
                         <input type="text" placeholder="Nombre de cylindre" id="N"><br>
                         <button type="button" onclick="calculate_cylindree()" class="calculate-button">Calculer</button>
                     </form>
-                    <p id="Cylindree_u"></p>
-                    <p id="Cylindree_t"></p>
-                    <p id="Cylindree_t_c_e"></p>
-                    <p id="Cylindree_t_c_d"></p>
+                    <h4 id="Cylindree_u"></h4>
+                    <h4 id="Cylindree_t"></h4>
+                    <h4 id="Cylindree_t_c_e"></h4>
+                    <h4 id="Cylindree_t_c_d"></h4>
                     <br>
                 </div>
 
                 <div id="subTab3" class="subtabPanel">
-                    <h2> Calcul du taux de compression</h2>
+                    <h3> Vérification du taux de compression</h3>
                     <img class="image1" src="./assets/img/Volume_C.PNG" alt="Volume Cylindre">
                     <form>
                         <input type="text" placeholder="Volume écoulé (cm3)" id="VburCul"><br>
@@ -159,15 +160,15 @@
                         <input type="text" placeholder="Cylindrée Unitaire" id="Vcylu"><br>
                         <button type="button" onclick="calculate_taux_c()" class="calculate-button">Calculer</button>
                     </form>
-                    <p id="Vcul"></p>
-                    <p id="Vpist"></p>
-                    <p id="Vjoint"></p>
-                    <p id="Taux_C"></p>
+                    <h4 id="Vcul"></h4>
+                    <h4 id="Vpist"></h4>
+                    <h4 id="Vjoint"></h4>
+                    <h4 id="Taux_C"></h4>
                     <br>
                 </div>
 
                 <div id="subTab4" class="subtabPanel">
-                    <h2> Calcul de la hauteur de bloc</h2>
+                    <h3> Vérification de la hauteur de bloc</h3>
                     <img class="image1" src="./assets/img/Hauteur_B.PNG" alt="course">
                     <form>
                         <input type="text" placeholder="Diamètre de l'alésage - D (mm)" id="Da"><br>
@@ -175,17 +176,17 @@
                         <input type="text" placeholder="Hauteur - H (mm) " id="H"><br>
                         <button type="button" onclick="calculate_hauteur_b()" class="calculate-button">Calculer</button>
                     </form>
-                    <p id="Hauteur_B"></p>
+                    <h4 id="Hauteur_B"></h4>
                     <br>
                 </div>
             </div>
         </div>
 
         <div id="Tab3" class="tabPanel">
-            <h2>Calcul de rapport de boite de vitesses</h2>
+            <h3>Vérification des rapports de boite de vitesses</h3>
             <img class="image1" src="./assets/img/rapport_de_boite2.PNG" alt="bielle">
             <p> Attention à prendre les rapports dans le bon sens : </p>
-            <p> Roue menante / Roue menée </p>
+            <h3> Roue menante / Roue menée </h3>
             <form>
                 <input  type="text" placeholder="Rapport 1ère" id="R1"><br>
                 <input  type="text" placeholder="Rapport 2nd" id="R2"><br>
@@ -197,29 +198,29 @@
                 <input  type="text" placeholder="Développement de roue (m)" id="DR"><br>
                 <button type="button" onclick="calculate_BV()" class="calculate-button">Calculer</button>
             </form>
-            <p id="LS1"></p>
-            <p id="LS2"></p>
-            <p id="LS3"></p>
-            <p id="LS4"></p>
-            <p id="LS5"></p>
-            <p id="LS6"></p>
+            <h4 id="LS1"></h4>
+            <h4 id="LS2"></h4>
+            <h4 id="LS3"></h4>
+            <h4 id="LS4"></h4>
+            <h4 id="LS5"></h4>
+            <h4 id="LS6"></h4>
             <br>
         </div>
 
         <div id="Tab4" class="tabPanel">
-            <h2>Calcul de la voie</h2>
+            <h3>Vérification de la voie</h3>
             <img class="image1" src="./assets/img/Calcul_voie.PNG" alt="Voie">
             <form>
                 <input  type="text" placeholder="V1 (cm)" id="V1"><br>
                 <input  type="text" placeholder="V2 (cm)" id="V2"><br>
                 <button type="button" onclick="calculate_Voie()" class="calculate-button">Calculer</button>
             </form>
-            <p id="Voie"></p>
+            <h4 id="Voie"></h4>
             <br>
         </div>
     </main>
     <footer>
-        <h3>Application FFSA Technique - Developed by Kevin Trevey</h3>
+        <h2>Application FFSA Technique - Developed by Kevin Trevey</h2>
     </footer>
 
     <script src="js/app.js"></script>

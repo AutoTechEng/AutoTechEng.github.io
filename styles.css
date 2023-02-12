@@ -20,6 +20,43 @@ h1 {
   letter-spacing: 3px;
   margin: 0px 0px 8px;
 }
+h2 {
+  object-fit: cover;
+  text-align: center;
+  color: black;
+  margin-top: 12px;
+  font-size: 60%;
+}
+h3 {
+  object-fit: cover;
+  font-weight: 800;
+  font-size: large;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  width:  70%;
+  }
+h4 {
+  object-fit: cover;
+  font-weight: 800;
+  font-size: large;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  width:  70%;
+  }
+p {
+  object-fit: cover;
+  font-weight: 400;
+  font-size: large;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  width:  70%;
+}
 input {
   background-color: rgb(241, 236, 236);
   border-width: 30%;
@@ -79,23 +116,6 @@ img {
   max-width: 1000px;
   margin-bottom: 2px;
   border-radius: 8px;
-}
-h2 {
-  color: black;
-  margin-top: 5px ;
-  margin-bottom: 5px ;
-  font-size: medium;
-}
-p {
-  object-fit: cover;
-  font-weight: 400;
-  font-size: large;
-  color: black;
-  margin-left: auto;
-  margin-right: auto;
-
-  padding-bottom: 5px;
-  width:  70%;
 }
 .tabContainer{
     width: 100%;
@@ -173,9 +193,4 @@ footer {
   background-color: lightgray;
   text-align: center;
   line-height: 0px;
-}
-h3 {
-font-size: 10px;
-color: black;
-padding-top: 1px;
 }
