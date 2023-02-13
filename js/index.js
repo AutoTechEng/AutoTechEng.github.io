@@ -48,9 +48,10 @@ function opensubTab(event, tabName) {
         var d1 = parseFloat(document.getElementById("d1").value);
         var D1 = parseFloat(document.getElementById("D1").value);
         var L1 = parseFloat(document.getElementById("L1").value);
+        var Eb = parseFloat(document.getElementById("Eb").value);
 
         // Perform calculation using the bielle inputs
-        var Entraxe1 = L1 -(D1+d1)/2 ;
+        var Entraxe1 = L1+Eb -(D1+d1+2*Eb)/2;
 
         // Display the result
         document.getElementById("Entraxe1").innerHTML = "Entraxe (mm): " + Entraxe1;
@@ -74,10 +75,10 @@ function opensubTab(event, tabName) {
         var N = parseFloat(document.getElementById("N").value);
 
         // Perform calculation using the cylindree inputs
-        var Cylindree_u = 3.14*(D*D)*L/4/1e6 ;
-        var Cylindree_t = 3.14*(D*D)*L*N/4/1e6 ;
-        var Cylindree_t_c_e = 3.14*(D*D)*L*N*1.7/4/1e6 ;
-        var Cylindree_t_c_d = 3.14*(D*D)*L*N*1.5/4/1e6 ;
+        var Cylindree_u = 3.141592*(D*D)*L/4/1e6 ;
+        var Cylindree_t = 3.141592*(D*D)*L*N/4/1e6 ;
+        var Cylindree_t_c_e = 3.141592*(D*D)*L*N*1.7/4/1e6 ;
+        var Cylindree_t_c_d = 3.141592*(D*D)*L*N*1.5/4/1e6 ;
 
         // Display the result
         document.getElementById("Cylindree_u").innerHTML = "Cylindrée Unitaire (L) : " + Cylindree_u.toFixed(2);
@@ -122,12 +123,12 @@ function opensubTab(event, tabName) {
         var RP = parseFloat(document.getElementById("RP").value);
         var DR = parseFloat(document.getElementById("DR").value);
         // Perform calculation using the bielle inputs
-        var LS1 = RP * R1 * DR ;
-        var LS2 = RP * R2 * DR ;
-        var LS3 = RP * R3 * DR ;
-        var LS4 = RP * R4 * DR ;
-        var LS5 = RP * R5 * DR ;
-        var LS6 = RP * R6 * DR ;
+        var LS1 = RP * R1 * DR * 10;
+        var LS2 = RP * R2 * DR * 10;
+        var LS3 = RP * R3 * DR * 10;
+        var LS4 = RP * R4 * DR * 10;
+        var LS5 = RP * R5 * DR * 10;
+        var LS6 = RP * R6 * DR * 10;
 
         // Display the result
         document.getElementById("LS1").innerHTML = "Longueur 1ère(m): " + LS1.toFixed(3);
