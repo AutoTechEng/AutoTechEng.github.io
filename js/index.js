@@ -97,7 +97,7 @@ function opensubTab(event, tabName) {
         var Vcylu = parseFloat(document.getElementById("Vcylu").value);
 
         var Vcul = VburCul-VplaqCul;
-        var Vpist = 0.1*Dpis*Dpis*3.141592/4 ;
+        var Vpist = VburPis - 0.1*Dpis*Dpis*3.141592/4 ;
         var Vjoint = Ejoint*Djoint*Djoint*3.141592/4 ;
         
 

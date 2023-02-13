@@ -1,4 +1,4 @@
-const staticCacheName = "cache-v1";
+const staticCacheName = "cache-v2";
 const assets = ["/", "/index.html"];
 
 // ajout fichiers en cache
@@ -45,7 +45,7 @@ self.addEventListener("fetch", (event) => {
 self.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then((keys) => {
-      return Promise.add(
+      return Promise.all(
         keys
           .filter((key) => key !== staticCacheName)
           .map((key) => caches.delete(key))
