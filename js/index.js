@@ -140,8 +140,8 @@ function opensubTab(event, tabName) {
     }
 
     function calculate_hauteur_b() {
-        var Da = parseFloat(document.getElementById("da").value);
-        var da = parseFloat(document.getElementById("Da").value);
+        var Da = parseFloat(document.getElementById("Da").value);
+        var da = parseFloat(document.getElementById("da").value);
         var H = parseFloat(document.getElementById("H").value);
 
         // Perform calculation using the bielle inputs

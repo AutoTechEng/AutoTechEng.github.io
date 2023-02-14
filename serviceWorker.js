@@ -1,8 +1,9 @@
-const staticCacheName = "cache-v2";
+const staticCacheName = "cache-v8";
 const assets = ["/", "/index.html"];
 
 // ajout fichiers en cache
 self.addEventListener("install", (e) => {
+  self.skipWaiting();
   e.waitUntil(
     caches.open(staticCacheName).then((cache) => {
       cache.addAll(assets);
