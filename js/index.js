@@ -44,6 +44,39 @@ function opensubTab(event, tabName) {
         event.currentTarget.className += " active";
     }
 
+
+
+
+    // Get the dropdown element and the tab content elements
+const dropdown = document.getElementById("manuelMenu");
+const tabContents = document.getElementsByClassName("manuelTabContent");
+
+// Hide all the tab content elements except the first one
+for (let i = 1; i < tabContents.length; i++) {
+    tabContents[i].style.display = "none";
+}
+
+// Add an event listener to the dropdown element
+dropdown.addEventListener("change", openManuelTab);
+
+// Function to show the selected tab content and hide the rest
+function openManuelTab(event) {
+    // Get the selected value from the dropdown
+    const selectedValue = event.target.value;
+
+    // Loop through all the tab content elements and hide them except the selected one
+    for (let i = 0; i < tabContents.length; i++) {
+        if (tabContents[i].id === `manuelTab${selectedValue.slice(-1)}`) {
+            tabContents[i].style.display = "block";
+        } else {
+            tabContents[i].style.display = "none";
+        }
+    }
+}
+
+
+
+
     function calculate_bielle1() {
         var d1 = parseFloat(document.getElementById("d1").value);
         var D1 = parseFloat(document.getElementById("D1").value);
