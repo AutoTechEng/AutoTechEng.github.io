@@ -21,22 +21,27 @@
     <h1>Technique</h1>
     <div class="tabContainer">
         <div class="buttonContainer">
-            <button   onclick="openTab(event, 'Tab1')">Manuel</button>
-            <button   onclick="openTab(event, 'Tab2')">Moteur</button>
-            <button   onclick="openTab(event, 'Tab3')">Boite de vitesses</button>
-            <button   onclick="openTab(event, 'Tab4')">Carroserie Chassis</button>
+            <button   onclick="openTab(event, 'Tab1')">Annexe J</button>
+            <button   onclick="openTab(event, 'Tab2')">Listes Techniques</button>
+            <button   onclick="openTab(event, 'Tab3')">Outils de Calcul</button>
+            <button   onclick="openTab(event, 'Tab4')">Contacts</button>
         </div>
 
     <main>
         <div id="Tab1" class="tabPanel">
-            <select id="manuelMenu" onchange="openManuelTab(event)">
-                <option value="default">Bienvenue, selectionnez le document à consulter</option>
-                <option value="option1">Manuel</option>
-                <option value="option2">Art.251 - Classifications et définitions</option>
-                <option value="option3">suite</option>
+            <select id="DocumentMenu" onchange="openDocumentTab(event)">
+                <option value="option1">Manuel des commissaires techniques</option>
+                <option value="option2">ART 251 Classifications et définitions</option>
+                <option value="option3">ART 253 Equipement de Sécurité Gr. N-A-R-GT-F2000</option>
+                <option value="option4">ART 254A Règlement S2000 Rallye</option>
+                <option value="option5">ART 255. Règlement Groupe A</option>
+                <option value="option6">ART 255A Règlement S2000 Rallye WRC</option>
+                <option value="option7">ART 255B Règlement WRC</option>
+                <option value="option8">ART 256 Règlement technique R-GT</option>
+                <option value="option9">ART 260D Règlement Spécifique Groupe R3D-R3T</option>
             </select>
 
-            <div id="manuelTab1" class="manuelTabContent">
+            <div id="DocumentTab1" class="DocumentTabContent">
                 <img class="image2" src="./assets/img/Manuel/Manuel-01.png" alt="Manuel-01">
                 <img class="image2" src="./assets/img/Manuel/Manuel-02.png" alt="Manuel-02">
                 <img class="image2" src="./assets/img/Manuel/Manuel-03.png" alt="Manuel-03">
@@ -94,7 +99,7 @@
                 <img class="image2" src="./assets/img/Manuel/Manuel-55.png" alt="Manuel-55">
                 <img class="image2" src="./assets/img/Manuel/Manuel-56.png" alt="Manuel-56">
             </div>
-            <div id="manuelTab2" class="manuelTabContent">
+            <div id="DocumentTab2" class="DocumentTabContent">
                 <img class="image2" src="./assets/img/001_1C-ART_251/001_1C-ART_251-01.png" alt="001_1C-ART_251-01">
                 <img class="image2" src="./assets/img/001_1C-ART_251/001_1C-ART_251-02.png" alt="001_1C-ART_251-02">
                 <img class="image2" src="./assets/img/001_1C-ART_251/001_1C-ART_251-03.png" alt="001_1C-ART_251-03">
@@ -119,150 +124,171 @@
                 <img class="image2" src="./assets/img/001_1C-ART_251/001_1C-ART_251-22.png" alt="001_1C-ART_251-22">
             </div>
 
-            <div id="manuelTab3" class="manuelTabContent">
-                <p> en cours de developpement </p>
+            <div id="DocumentTab3" class="DocumentTabContent">
+                <iframe src="./assets/003_1F-ART253.pdf" width="100%" height="600"></iframe>
             </div>
         </div>
 
         <div id="Tab2" class="tabPanel">
-            <div class="subtabContainer">
-                <div class="subbuttonContainer">
-                    <button   onclick="opensubTab(event, 'subTab1')">Entraxe Bielle</button>
-                    <button   onclick="opensubTab(event, 'subTab2')">Cylindrée Moteur</button>
-                    <button   onclick="opensubTab(event, 'subTab3')">Taux de compression</button>
-                    <button   onclick="opensubTab(event, 'subTab4')">Hauteur de bloc</button>
-                </div>
-        
-                <div id="subTab1" class="subtabPanel">
-                    <br><h3> Vérification de l'entraxe de bielle</h3>
-                    <p> Methode 1 : Avec becs exterieurs</p>
-                    <img class="image1" src="./assets/img/bielle1.png" alt="bielle">
-                    <form>
-                        <input type="text" placeholder="Diamètre intérieur - pied de bielle d (mm)" id="d1"><br>
-                        <input type="text" placeholder="Diamètre intérieur - tête de bielle D (mm)" id="D1"><br>
-                        <input type="text" placeholder="Longueur interieur L1 (mm)" id="L1"><br>
-                        <input type="text" placeholder="Epaisseur des becs B1 (mm)" id="Eb"><br>
-                        <button type="button" onclick="calculate_bielle1()" class="calculate-button">Calculer</button>
-                    </form>
-                    <h4 id="Entraxe1"></h4>
-
-                    <p> Methode 2 : Avec becs intérieurs</p>
-                    <img class="image1" src="./assets/img/bielle2.png" alt="bielle">
-                    <form>
-                        <input type="text" placeholder="Diamètre intérieur - pied de bielle d (mm)" id="d2"><br>
-                        <input type="text" placeholder="Diamètre intérieur - tête de bielle D (mm)" id="D2"><br>
-                        <input type="text" placeholder="Longueur interieur L2 (mm)" id="L2"><br>
-                        <button type="button" onclick="calculate_bielle2()" class="calculate-button">Calculer</button>
-                    </form>
-                    <h4 id="Entraxe2"></h4>
-                    <br>
-                </div>
-
-                <div id="subTab2" class="subtabPanel">
-                    <h3> Vérification de la cylindrée moteur</h3>
-                    <img class="image1" src="./assets/img/Course.png" alt="course">
-                    <form>
-                        <input type="text" placeholder="Diamètre intérieur du cylindre - D (mm)" id="D"><br>
-                        <input type="text" placeholder="Course du piston - L (mm)" id="L"><br>
-                        <input type="text" placeholder="Nombre de cylindre" id="N"><br>
-                        <button type="button" onclick="calculate_cylindree()" class="calculate-button">Calculer</button>
-                    </form>
-                    <h4 id="Cylindree_u"></h4>
-                    <h4 id="Cylindree_t"></h4>
-                    <h4 id="Cylindree_t_c_e"></h4>
-                    <h4 id="Cylindree_t_c_d"></h4>
-                    <br>
-                </div>
-
-                <div id="subTab3" class="subtabPanel">
-                    <h3> Vérification du taux de compression</h3>
-                    <img class="image1" src="./assets/img/Volume_C.png" alt="Volume Cylindre">
-                    <form>
-                        <input type="text" placeholder="Volume écoulé (cm3)" id="VburCul"><br>
-                        <input type="text" placeholder="Volume plaque (cm3)" id="VplaqCul"><br>
-                    </form>
-                    <img class="image1" src="./assets/img/Volume_P.png" alt="Volume Piston">
-                    <form>
-                        <input type="text" placeholder="Volume écoulé (cm3)" id="VburPis"><br>
-                        <input type="text" placeholder="Diamètre alésage (cm)" id="Dpis"><br>
-                    </form>
-                    <img class="image1" src="./assets/img/Volume_J.png" alt="Volume Joint">
-                    <form>
-                        <input type="text" placeholder="Epaisseur du joint - E (cm)" id="Ejoint"><br>
-                        <input type="text" placeholder="Diamètre alésage - D (cm)" id="Djoint"><br>
-                    </form>
-                    <img class="image1" src="./assets/img/cylindree_u.png" alt="Volume Cylindree Unitaire">
-                    <form>
-                        <input type="text" placeholder="Cylindrée Unitaire (cm3)" id="Vcylu">
-                    </form>
-                    <img class="image1" src="./assets/img/taux_c.png" alt="Taux de Compression">
-                    <form>
-                        <button type="button" onclick="calculate_taux_c()" class="calculate-button">Calculer</button>
-                    </form>
-                    <h4 id="Vcul"></h4>
-                    <h4 id="Vpist"></h4>
-                    <h4 id="Vjoint"></h4>
-                    <h4 id="Taux_C"></h4>
-                    <br>
-                </div>
-
-                <div id="subTab4" class="subtabPanel">
-                    <h3> Vérification de la hauteur de bloc</h3>
-                    <img class="image1" src="./assets/img/Hauteur_B.png" alt="course">
-                    <form>
-                        <input type="text" placeholder="Diamètre de l'alésage - D (mm)" id="Da"><br>
-                        <input type="text" placeholder="Diamètre de l'arbre - d (mm)" id="da"><br>
-                        <input type="text" placeholder="Hauteur - H (mm) " id="H"><br>
-                        <button type="button" onclick="calculate_hauteur_b()" class="calculate-button">Calculer</button>
-                    </form>
-                    <h4 id="Hauteur_B"></h4>
-                    <br>
-                </div>
-            </div>
+            
         </div>
 
         <div id="Tab3" class="tabPanel">
-            <h3>Vérification des rapports de boite de vitesses</h3>
-            <img class="image1" src="./assets/img/rapport_de_boite2.png" alt="bielle">
-            <p> Attention à prendre les rapports dans le bon sens : </p>
-            <h3> Roue menante / Roue menée </h3>
-            <form>
-                <input  type="text" placeholder="Rapport 1ère" id="R1"><br>
-                <input  type="text" placeholder="Rapport 2nd" id="R2"><br>
-                <input  type="text" placeholder="Rapport 3eme" id="R3"><br>
-                <input  type="text" placeholder="Rapport 4eme" id="R4"><br>
-                <input  type="text" placeholder="Rapport 5eme" id="R5"><br>
-                <input  type="text" placeholder="Rapport 6eme" id="R6"><br>
-                <input  type="text" placeholder="Rapport de pont" id="RP"><br>
-                <input  type="text" placeholder="Développement de roue (m)" id="DR"><br>
-                <button type="button" onclick="calculate_BV()" class="calculate-button">Calculer</button>
-            </form>
-            <h4 id="LS1"></h4>
-            <h4 id="LS2"></h4>
-            <h4 id="LS3"></h4>
-            <h4 id="LS4"></h4>
-            <h4 id="LS5"></h4>
-            <h4 id="LS6"></h4>
-            <br>
+
+            <select id="CalculMenu" onchange="openDocumentTab(event)">
+                <option value="option1">Moteur</option>
+                <option value="option2">Boite de vitesses</option>
+                <option value="option3">Carroserie et Chassis</option>
+            </select>
+
+            <div id="CalculTab1" class="CalculTabContent">
+                <div class="subtabContainer">
+                    <div class="subbuttonContainer">
+                        <br>
+                        <button   onclick="opensubTab(event, 'subTab1')">Entraxe Bielle</button>
+                        <button   onclick="opensubTab(event, 'subTab2')">Cylindrée Moteur</button>
+                        <button   onclick="opensubTab(event, 'subTab3')">Taux de compression</button>
+                        <button   onclick="opensubTab(event, 'subTab4')">Hauteur de bloc</button>
+                    </div>
+            
+                    <div id="subTab1" class="subtabPanel">
+                        <br><h3> Vérification de l'entraxe de bielle</h3>
+                        <p> Methode 1 : Avec becs exterieurs</p>
+                        <img class="image1" src="./assets/img/bielle1.png" alt="bielle">
+                        <form>
+                            <input type="text" placeholder="Diamètre intérieur - pied de bielle d (mm)" id="d1"><br>
+                            <input type="text" placeholder="Diamètre intérieur - tête de bielle D (mm)" id="D1"><br>
+                            <input type="text" placeholder="Longueur interieur L1 (mm)" id="L1"><br>
+                            <input type="text" placeholder="Epaisseur des becs B1 (mm)" id="Eb"><br>
+                            <button type="button" onclick="calculate_bielle1()" class="calculate-button">Calculer</button>
+                        </form>
+                        <h4 id="Entraxe1"></h4>
+    
+                        <p> Methode 2 : Avec becs intérieurs</p>
+                        <img class="image1" src="./assets/img/bielle2.png" alt="bielle">
+                        <form>
+                            <input type="text" placeholder="Diamètre intérieur - pied de bielle d (mm)" id="d2"><br>
+                            <input type="text" placeholder="Diamètre intérieur - tête de bielle D (mm)" id="D2"><br>
+                            <input type="text" placeholder="Longueur interieur L2 (mm)" id="L2"><br>
+                            <button type="button" onclick="calculate_bielle2()" class="calculate-button">Calculer</button>
+                        </form>
+                        <h4 id="Entraxe2"></h4>
+                        <br>
+                    </div>
+    
+                    <div id="subTab2" class="subtabPanel">
+                        <h3> Vérification de la cylindrée moteur</h3>
+                        <img class="image1" src="./assets/img/Course.png" alt="course">
+                        <form>
+                            <input type="text" placeholder="Diamètre intérieur du cylindre - D (mm)" id="D"><br>
+                            <input type="text" placeholder="Course du piston - L (mm)" id="L"><br>
+                            <input type="text" placeholder="Nombre de cylindre" id="N"><br>
+                            <button type="button" onclick="calculate_cylindree()" class="calculate-button">Calculer</button>
+                        </form>
+                        <h4 id="Cylindree_u"></h4>
+                        <h4 id="Cylindree_t"></h4>
+                        <h4 id="Cylindree_t_c_e"></h4>
+                        <h4 id="Cylindree_t_c_d"></h4>
+                        <br>
+                    </div>
+    
+                    <div id="subTab3" class="subtabPanel">
+                        <h3> Vérification du taux de compression</h3>
+                        <img class="image1" src="./assets/img/Volume_C.png" alt="Volume Cylindre">
+                        <form>
+                            <input type="text" placeholder="Volume écoulé (cm3)" id="VburCul"><br>
+                            <input type="text" placeholder="Volume plaque (cm3)" id="VplaqCul"><br>
+                        </form>
+                        <img class="image1" src="./assets/img/Volume_P.png" alt="Volume Piston">
+                        <form>
+                            <input type="text" placeholder="Volume écoulé (cm3)" id="VburPis"><br>
+                            <input type="text" placeholder="Diamètre alésage (cm)" id="Dpis"><br>
+                        </form>
+                        <img class="image1" src="./assets/img/Volume_J.png" alt="Volume Joint">
+                        <form>
+                            <input type="text" placeholder="Epaisseur du joint - E (cm)" id="Ejoint"><br>
+                            <input type="text" placeholder="Diamètre alésage - D (cm)" id="Djoint"><br>
+                        </form>
+                        <img class="image1" src="./assets/img/cylindree_u.png" alt="Volume Cylindree Unitaire">
+                        <form>
+                            <input type="text" placeholder="Cylindrée Unitaire (cm3)" id="Vcylu">
+                        </form>
+                        <img class="image1" src="./assets/img/taux_c.png" alt="Taux de Compression">
+                        <form>
+                            <button type="button" onclick="calculate_taux_c()" class="calculate-button">Calculer</button>
+                        </form>
+                        <h4 id="Vcul"></h4>
+                        <h4 id="Vpist"></h4>
+                        <h4 id="Vjoint"></h4>
+                        <h4 id="Taux_C"></h4>
+                        <br>
+                    </div>
+    
+                    <div id="subTab4" class="subtabPanel">
+                        <h3> Vérification de la hauteur de bloc</h3>
+                        <img class="image1" src="./assets/img/Hauteur_B.png" alt="course">
+                        <form>
+                            <input type="text" placeholder="Diamètre de l'alésage - D (mm)" id="Da"><br>
+                            <input type="text" placeholder="Diamètre de l'arbre - d (mm)" id="da"><br>
+                            <input type="text" placeholder="Hauteur - H (mm) " id="H"><br>
+                            <button type="button" onclick="calculate_hauteur_b()" class="calculate-button">Calculer</button>
+                        </form>
+                        <h4 id="Hauteur_B"></h4>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="CalculTab2" class="CalculTabContent">
+                <h3>Vérification des rapports de boite de vitesses</h3>
+                <img class="image1" src="./assets/img/rapport_de_boite2.png" alt="bielle">
+                <p> Attention à prendre les rapports dans le bon sens : </p>
+                <h3> Roue menante / Roue menée </h3>
+                <form>
+                    <input  type="text" placeholder="Rapport 1ère" id="R1"><br>
+                    <input  type="text" placeholder="Rapport 2nd" id="R2"><br>
+                    <input  type="text" placeholder="Rapport 3eme" id="R3"><br>
+                    <input  type="text" placeholder="Rapport 4eme" id="R4"><br>
+                    <input  type="text" placeholder="Rapport 5eme" id="R5"><br>
+                    <input  type="text" placeholder="Rapport 6eme" id="R6"><br>
+                    <input  type="text" placeholder="Rapport de pont" id="RP"><br>
+                    <input  type="text" placeholder="Développement de roue (m)" id="DR"><br>
+                    <button type="button" onclick="calculate_BV()" class="calculate-button">Calculer</button>
+                </form>
+                <h4 id="LS1"></h4>
+                <h4 id="LS2"></h4>
+                <h4 id="LS3"></h4>
+                <h4 id="LS4"></h4>
+                <h4 id="LS5"></h4>
+                <h4 id="LS6"></h4>
+                <br>
+            </div>
+
+            <div id="CalculTab3" class="CalculTabContent">
+                <h3>Vérification de la voie</h3>
+                <img class="image1" src="./assets/img/Calcul_voie.png" alt="Voie">
+                <form>
+                    <input  type="text" placeholder="V1 (cm)" id="V1"><br>
+                    <input  type="text" placeholder="V2 (cm)" id="V2"><br>
+                    <button type="button" onclick="calculate_Voie()" class="calculate-button">Calculer</button>
+                </form>
+                <h4 id="Voie"></h4>
+                <br>
+            </div>
         </div>
 
         <div id="Tab4" class="tabPanel">
-            <h3>Vérification de la voie</h3>
-            <img class="image1" src="./assets/img/Calcul_voie.png" alt="Voie">
-            <form>
-                <input  type="text" placeholder="V1 (cm)" id="V1"><br>
-                <input  type="text" placeholder="V2 (cm)" id="V2"><br>
-                <button type="button" onclick="calculate_Voie()" class="calculate-button">Calculer</button>
-            </form>
-            <h4 id="Voie"></h4>
-            <br>
         </div>
+
     </main>
     <footer>
         <h2>Application FFSA Technique - Developed by Kevin Trevey</h2>
     </footer>
 
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/index.js"></script>
+    
 </body>
 </html>
