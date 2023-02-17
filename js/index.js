@@ -1,4 +1,8 @@
-    // Default open the first tab
+   // TABS // 
+   
+    // MAIN TABS // 
+
+   // Default open the first tab
     document.getElementsByClassName("tabPanel")[0].style.display = "block";
     document.getElementsByClassName("buttonContainer")[0].className += " active";
 
@@ -20,6 +24,8 @@
         document.getElementById(tabName).style.display = "block";
         event.currentTarget.className += " active";
     }
+
+    // SUB TABS //
 
     // Default open the first tab
     document.getElementsByClassName("subtabPanel")[0].style.display = "block";
@@ -45,28 +51,32 @@ function opensubTab(event, tabName) {
     }
 
 
-
+ // DOCUMENT DROPDOWN //
 
     // Get the dropdown element and the tab content elements
-const dropdown = document.getElementById("manuelMenu");
-const tabContents = document.getElementsByClassName("manuelTabContent");
+const dropdown = document.getElementById("DocumentMenu");
+const tabContents = document.getElementsByClassName("DocumentTabContent");
 
 // Hide all the tab content elements except the first one
 for (let i = 1; i < tabContents.length; i++) {
     tabContents[i].style.display = "none";
 }
 
+// Show the first tab content element
+tabContents[0].style.display = "block";
+
+
 // Add an event listener to the dropdown element
-dropdown.addEventListener("change", openManuelTab);
+dropdown.addEventListener("change", openDocumentTab);
 
 // Function to show the selected tab content and hide the rest
-function openManuelTab(event) {
+function openDocumentTab(event) {
     // Get the selected value from the dropdown
     const selectedValue = event.target.value;
 
     // Loop through all the tab content elements and hide them except the selected one
     for (let i = 0; i < tabContents.length; i++) {
-        if (tabContents[i].id === `manuelTab${selectedValue.slice(-1)}`) {
+        if (tabContents[i].id === `DocumentTab${selectedValue.slice(-1)}`) {
             tabContents[i].style.display = "block";
         } else {
             tabContents[i].style.display = "none";
@@ -74,8 +84,43 @@ function openManuelTab(event) {
     }
 }
 
+ // DOCUMENT DROPDOWN //
+
+    // Get the dropdown element and the tab content elements
+   const calcdropdown = document.getElementById("CalculMenu");
+   const calctabContents = document.getElementsByClassName("CalculTabContent");
+    
+    // Hide all the tab content elements except the first one
+    for (let i = 1; i < calctabContents.length; i++) {
+        calctabContents[i].style.display = "none";
+    }
+    
+    // Show the first tab content element
+    calctabContents[0].style.display = "block";
+    
+    
+    // Add an event listener to the dropdown element
+    calcdropdown.addEventListener("change", openCalculTab);
+    
+    // Function to show the selected tab content and hide the rest
+    function openCalculTab(event) {
+        // Get the selected value from the dropdown
+        const selectedValue = event.target.value;
+    
+        // Loop through all the tab content elements and hide them except the selected one
+        for (let i = 0; i < calctabContents.length; i++) {
+            if (calctabContents[i].id === `CalculTab${selectedValue.slice(-1)}`) {
+                calctabContents[i].style.display = "block";
+            } else {
+                calctabContents[i].style.display = "none";
+            }
+        }
+    }
 
 
+
+
+// CALCULATIONS // 
 
     function calculate_bielle1() {
         var d1 = parseFloat(document.getElementById("d1").value);
@@ -194,3 +239,5 @@ function openManuelTab(event) {
         // Display the result
         document.getElementById("Voie").innerHTML = "Voie (cm): " + Voie;
     }
+
+
