@@ -33,7 +33,6 @@
                 <option value="option1">Manuel des commissaires techniques</option>
                 <option value="option2">ART 251 Classifications et définitions</option>
                 <option value="option3">ART 253 Equipement de Sécurité Gr. N-A-R-GT-F2000</option>
-                <option value="option4">ART 254A Règlement S2000 Rallye</option>
             </select>
 
             <div id="DocumentTab1" class="DocumentTabContent">
@@ -120,12 +119,12 @@
             </div>
 
             <div id="DocumentTab3" class="DocumentTabContent">
-                <iframe src="./assets/003_1F-ART253.pdf" width="100%" height="600"></iframe>
+                <p>En cours de developpement  </p>
             </div>
         </div>
 
         <div id="Tab2" class="tabPanel">
-        <p>En cours de developpement  </p>    
+            <p>En cours de developpement  </p>    
         </div>
 
         <div id="Tab3" class="tabPanel">
@@ -139,7 +138,6 @@
             <div id="CalculTab1" class="CalculTabContent">
                 <div class="subtabContainer">
                     <div class="subbuttonContainer">
-                        <br>
                         <button   onclick="opensubTab(event, 'subTab1')">Entraxe Bielle</button>
                         <button   onclick="opensubTab(event, 'subTab2')">Cylindrée Moteur</button>
                         <button   onclick="opensubTab(event, 'subTab3')">Taux de compression</button>
@@ -172,7 +170,7 @@
                     </div>
     
                     <div id="subTab2" class="subtabPanel">
-                        <h3> Vérification de la cylindrée moteur</h3>
+                        <br><h3> Vérification de la cylindrée moteur</h3>
                         <img class="image1" src="./assets/img/Course.png" alt="course">
                         <form>
                             <input type="text" placeholder="Diamètre intérieur du cylindre - D (mm)" id="D"><br>
@@ -188,7 +186,7 @@
                     </div>
     
                     <div id="subTab3" class="subtabPanel">
-                        <h3> Vérification du taux de compression</h3>
+                        <br><h3> Vérification du taux de compression</h3>
                         <img class="image1" src="./assets/img/Volume_C.png" alt="Volume Cylindre">
                         <form>
                             <input type="text" placeholder="Volume écoulé (cm3)" id="VburCul"><br>
@@ -220,7 +218,7 @@
                     </div>
     
                     <div id="subTab4" class="subtabPanel">
-                        <h3> Vérification de la hauteur de bloc</h3>
+                        <br><h3> Vérification de la hauteur de bloc</h3>
                         <img class="image1" src="./assets/img/Hauteur_B.png" alt="course">
                         <form>
                             <input type="text" placeholder="Diamètre de l'alésage - D (mm)" id="Da"><br>
