@@ -76,7 +76,8 @@ function openDocumentTab(event) {
 
     // Loop through all the tab content elements and hide them except the selected one
     for (let i = 0; i < tabContents.length; i++) {
-        if (tabContents[i].id === `DocumentTab${selectedValue.slice(-1)}`) {
+        const selectedNum = selectedValue.match(/\d+/)[0];
+        if (tabContents[i].id === `DocumentTab${selectedNum}`) {
             tabContents[i].style.display = "block";
         } else {
             tabContents[i].style.display = "none";
@@ -84,7 +85,7 @@ function openDocumentTab(event) {
     }
 }
 
- // DOCUMENT DROPDOWN //
+ // Caclulation DROPDOWN //
 
     // Get the dropdown element and the tab content elements
    const calcdropdown = document.getElementById("CalculMenu");
