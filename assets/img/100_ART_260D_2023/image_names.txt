@@ -1,6 +1,0 @@
-<img class="image2" src="./assets/img/100_ART_260D_2023/100_ART_260D_2023_1.png "alt="100_ART_260D_2023_1.png">
-<img class="image2" src="./assets/img/100_ART_260D_2023/100_ART_260D_2023_2.png "alt="100_ART_260D_2023_2.png">
-<img class="image2" src="./assets/img/100_ART_260D_2023/100_ART_260D_2023_3.png "alt="100_ART_260D_2023_3.png">
-<img class="image2" src="./assets/img/100_ART_260D_2023/100_ART_260D_2023_4.png "alt="100_ART_260D_2023_4.png">
-<img class="image2" src="./assets/img/100_ART_260D_2023/100_ART_260D_2023_5.png "alt="100_ART_260D_2023_5.png">
-<img class="image2" src="./assets/img/100_ART_260D_2023/100_ART_260D_2023_6.png "alt="100_ART_260D_2023_6.png">
