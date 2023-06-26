@@ -233,11 +233,7 @@ footer {
   font-size: 80%;
 }
 
-.pdfViewer {
-  width: auto;
-  height: auto;
+.DocumentTabContent {
+  height: 100%; /* Set the height to 100% of the viewport height */
 }
 
-.pdfPageContainer {
-  width: auto;
-}
