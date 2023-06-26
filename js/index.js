@@ -20,11 +20,90 @@
         for (i = 0; i < buttonContainer.length; i++) {
             buttonContainer[i].className = buttonContainer[i].className.replace(" active", "");
         }
+
+        // Code to remove the "active" class from the previously active button
+        let activeButtons = document.getElementsByClassName("active");
+        for (i = 0; i < activeButtons.length; i++) {
+            activeButtons[i].classList.remove("active");
+        }
+
         // Show the current tab, and add an "active" class to the button that opened the tab
         document.getElementById(tabName).style.display = "block";
         event.currentTarget.className += " active";
     }
 
+
+ // DOCUMENT DROPDOWN //
+
+    // Get the dropdown element and the tab content elements
+const dropdown = document.getElementById("DocumentMenu");
+const tabContents = document.getElementsByClassName("DocumentTabContent");
+
+// Hide all the tab content elements except the first one
+for (let i = 1; i < tabContents.length; i++) {
+    tabContents[i].style.display = "none";
+}
+
+// Show the first tab content element
+tabContents[0].style.display = "block";
+
+
+// Add an event listener to the dropdown element
+dropdown.addEventListener("change", openDocumentTab);
+
+// Function to show the selected tab content and hide the rest
+function openDocumentTab(event) {
+    // Get the selected value from the dropdown
+    const selectedValue = event.target.value;
+
+    // Loop through all the tab content elements and hide them except the selected one
+    for (let i = 0; i < tabContents.length; i++) {
+        const selectedNum = selectedValue.match(/\d+/)[0];
+        if (tabContents[i].id === `DocumentTab${selectedNum}`) {
+            tabContents[i].style.display = "block";
+        } else {
+            tabContents[i].style.display = "none";
+        }
+    }
+}
+
+
+// List DROPDOWN //
+
+    // Get the dropdown element and the tab content elements
+    const listdropdown = document.getElementById("ListMenu");
+    const listtabContents = document.getElementsByClassName("ListTabContent");
+     
+     // Hide all the tab content elements except the first one
+     for (let i = 1; i < listtabContents.length; i++) {
+         listtabContents[i].style.display = "none";
+     }
+     
+     // Show the first tab content element
+     listtabContents[0].style.display = "block";
+     
+     
+     // Add an event listener to the dropdown element
+     listdropdown.addEventListener("change", openCalculTab);
+     
+     // Function to show the selected tab content and hide the rest
+     function openListTab(event) {
+         // Get the selected value from the dropdown
+         const selectedValue = event.target.value;
+     
+        // Loop through all the tab content elements and hide them except the selected one
+        for (let i = 0; i < listtabContents.length; i++) {
+            const selectedNum = selectedValue.match(/\d+/)[0];
+            if (listtabContents[i].id === `ListTab${selectedNum}`) {
+                listtabContents[i].style.display = "block";
+            } else {
+                listtabContents[i].style.display = "none";
+            }
+        }
+    }
+    
+ 
+ 
 
  // Caclulation DROPDOWN //
 

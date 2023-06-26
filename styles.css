@@ -16,7 +16,7 @@ body {
   font-family: "font-1", cursive;
 }
 h1 {
-  font-size: 25px;
+  font-size: 18px;
   letter-spacing: 3px;
   margin: 0px 0px 8px;
 }
@@ -125,7 +125,7 @@ img {
     height: 15%;
 }
 .tabContainer .buttonContainer button{
-    width: 50%;
+    width: 25%;
     height: 100%;
     float:left;
     border: none;
@@ -138,8 +138,14 @@ img {
     font-weight: 600;
 }
 .tabContainer .buttonContainer button:hover{
-    background-color: #d7d4d4;
+    background-color: #b5c3ef;
 }
+.tabContainer .buttonContainer button.active{
+  background-color: #423e97;
+  font-weight: 800;
+  color: white;
+}
+
 .tabContainer .tabPanel{
     height: 100%;
     color:black;
