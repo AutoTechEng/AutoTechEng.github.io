@@ -234,14 +234,10 @@ footer {
 }
 
 .pdfViewer {
-  width: 100%;
+  width: auto;
   height: auto;
-  /* Add any other necessary styles */
 }
 
-@media (max-width: 600px) {
-  .pdfViewer {
-    width: 100%;
-    height: auto;
-  }
+.pdfPageContainer {
+  width: auto;
 }

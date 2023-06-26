@@ -282,8 +282,8 @@ function loadPDF(pdfURL, container) {
 
                 // Prepare the rendering context
                 var context = canvas.getContext("2d");
-                var viewport = page.getViewport({ scale: 1 });
-
+                var viewport = page.getViewport(DEFAULT_SCALE);
+1
                 // Set the canvas dimensions to match the PDF page
                 canvas.width = viewport.width;
                 canvas.height = viewport.height;
