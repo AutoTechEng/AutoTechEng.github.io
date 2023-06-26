@@ -16,8 +16,8 @@ body {
   font-family: "font-1", cursive;
 }
 h1 {
-  font-size: 18px;
-  letter-spacing: 3px;
+  font-size: 120%;
+  letter-spacing: 100%;
   margin: 0px 0px 8px;
 }
 h2 {
