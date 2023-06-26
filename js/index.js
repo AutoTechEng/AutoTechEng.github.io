@@ -264,6 +264,8 @@ function openDocumentTab(event) {
 
 
 
+// PDF VIEWER //
+
 // Function to load a PDF into a given container
 function loadPDF(pdfURL, container) {
     // Initialize PDF.js
@@ -283,7 +285,7 @@ function loadPDF(pdfURL, container) {
                 var viewport = page.getViewport({ scale: 1 });
 
                 // Set the canvas dimensions to match the PDF page
-                canvas.width = container.offsetWidth; /* Use the container's width */
+                canvas.width = viewport.width;
                 canvas.height = viewport.height;
 
                 // Render the PDF page into the canvas
