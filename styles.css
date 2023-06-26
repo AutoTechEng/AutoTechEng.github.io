@@ -239,5 +239,6 @@ footer {
 }
 
 .pdfViewerContainer {
-  max-width: 800px;
+  width: 100%;
+  max-width: 100%; /* Set the maximum width to 100% */
 }
