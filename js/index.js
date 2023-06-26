@@ -261,4 +261,3 @@ function openDocumentTab(event) {
         document.getElementById("Voie").innerHTML = "Voie (cm): " + Voie;
     }
 
-
