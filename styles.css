@@ -210,3 +210,16 @@ footer {
   width: 100%;
   height: 100%;
 }
+
+.embed-container_2 {
+  height: 80vh; 
+}
+
+.embed-container_2 iframe,
+.embed-container_2 object,
+.embed-container_2 embed {
+  width: 100%;
+  height: 100%;
+}
+
+
