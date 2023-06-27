@@ -23,3 +23,9 @@ A rajouter (éventuellement) dans le manifest :
     "id": "com.google.samples.apps.iosched"
   }
 ]
+
+
+
+
+                    style="width: 100%; height: 100%;"
+                    frameborder="0"
