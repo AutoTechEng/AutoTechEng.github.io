@@ -47,6 +47,16 @@ h4 {
   padding-bottom: 5px;
   width:  70%;
   }
+
+  h5 {
+    object-fit: cover;
+    text-align: center;
+    color: white;
+    margin-top: 0px;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif; /* System font fallback */
+  }
+
 p {
   object-fit: cover;
   font-weight: 400;
