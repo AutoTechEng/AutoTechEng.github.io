@@ -215,7 +215,8 @@ footer {
 }
 
 .embed-container {
-  height: 75vh; 
+  height: 73vh;
+  width: 99.5%; 
 }
 
 .embed-container iframe,
