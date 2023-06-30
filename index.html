@@ -24,11 +24,11 @@
     </div>
 
     <div id="main-app" style="display: none;">
-        <img src="./assets/img/ffsa_logo.png" alt="logo" style="width: 40%; height: auto;">
-        <h1>Technique (app non officielle)</h1>
+        <img src="./assets/img/ffsa_logo.png" alt="logo" style="width: 30%; height: auto;">
+        <h1>Technique (non officielle)</h1>
         <div class="tabContainer">
             <div class="buttonContainer">
-                <button   onclick="openTab(event, 'Tab1')">Moderne</button>
+                <button class="active"  onclick="openTab(event, 'Tab1')">Moderne</button>
                 <button   onclick="openTab(event, 'Tab2')">Listes Techniques</button>
                 <button   onclick="openTab(event, 'Tab3')">Outils de Calcul</button>
                 <button   onclick="openTab(event, 'Tab4')">Manuel</button>
@@ -103,11 +103,10 @@
                 
                 <div id="DocumentTab1" class="DocumentTabContent">
                     <p></p>
-                    <p></p>
                     <p> Cette application est developpée de façon indépendante et n'est pas sous le contrôle de la FFSA.</p> 
                     <p> Le site de réference est celui de la FFSA.</p>
                     <p> L'intégralité de la règlementation de véhicules modernes est disponible dans cet onglet.</p> 
-                    <p> Selectionnez le document que vous souhaitez consulter dans la liste déroulante.</p> 
+                    <h3> Selectionnez le document que vous souhaitez consulter dans la liste déroulante.</h3> 
                 </div>
                 
                 <div id="DocumentTab2" class="DocumentTabContent">
@@ -480,11 +479,10 @@
 
                 <div id="ListTab1" class="ListTabContent">
                     <p></p>
-                    <p></p>
                     <p> Cette application est developpée de façon indépendante et n'est pas sous le contrôle de la FFSA.</p> 
                     <p> Le site de réference est celui de la FFSA.</p> 
                     <p> L'intégralité des lites techniques est disponible dans cet onglet.</p> 
-                    <p> Selectionnez le document que vous souhaitez consulter dans la liste déroulante.</p> 
+                    <h3> Selectionnez le document que vous souhaitez consulter dans la liste déroulante.</h3> 
                 </div> 
 
                 <div id="ListTab2" class="ListTabContent">
@@ -608,10 +606,11 @@
                 </select>
 
                 <div id="CalculTab1" class="CalculTabContent">
+                    <p></p>
                     <p> Cette application est developpée de façon indépendante et n'est pas sous le contrôle de la FFSA.</p> 
                     <p> Le site de réference est celui de la FFSA.</p>
                     <p> Des outils de calcul sont disponibles dans cet onglet.</p> 
-                    <p> Selectionnez l'outil que vous souhaitez utiliser dans la liste déroulante.</p> 
+                    <h3> Selectionnez l'outil que vous souhaitez utiliser dans la liste déroulante.</h3> 
                 </div>
 
 
@@ -803,7 +802,7 @@
 
 
     <footer>
-        <h2>Application FFSA Technique - Developed by @KevinTrevey</h2>
+        <h2>Application FFSATech v1.0 - Developed by Kevin Trevey</h2>
     </footer>
 
     <script src="./pdfjs/build/pdf.js"></script>
