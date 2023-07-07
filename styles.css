@@ -153,6 +153,7 @@ img {
     font-weight: 600;
     color: #000000;
     margin: 0;
+    transition: background-color 0.2s, font-weight 0.2s;
     
 }
 .tabContainer .buttonContainer button:hover{
@@ -162,17 +163,21 @@ img {
   background-color: #423e97;
   font-weight: 700;
   color: white;
+  transition: background-color 0.2s, font-weight 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .tabContainer .tabPanel{
     height: 100%;
     color:black;
     text-align: center;
-    padding-top: 10px;
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 22px;
     display: none;
+    font-size: 24px;
+    padding: 1px;
+    padding-top: 10px;
 }
 
 footer {
