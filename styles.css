@@ -127,7 +127,7 @@ img {
   object-fit: cover;
   width: 100%;
   height: auto;
-  max-width: 800px;
+  max-width: 1000px;
   margin-bottom: 2px;
   border-radius: 8px;
 }
@@ -176,8 +176,8 @@ img {
     font-size: 22px;
     display: none;
     font-size: 24px;
-    padding: 1px;
-    padding-top: 10px;
+    padding: 0px;
+    padding-top: 5px;
 }
 
 footer {
@@ -191,42 +191,55 @@ footer {
   line-height: 0px;
 }
 #DocumentMenu {
-  width: 100%;
+  width: 40%;
   height: 27px;
-  max-width: none;
+  min-width: 600px;
   display: block;
   margin: 0 auto;
   text-align: center;
-  background-color: #eee;
+  background-color: white;
+  border-color: white ;
+  border-bottom-color: red ;
   font-family: sans-serif;
   font-size: 73%;
+  font-weight: 600;
+  color: black;
 }
 #CalculMenu {
-  width: 100%;
+  width: 40%;
   height: 27px;
-  max-width: none;
+  min-width: 600px;
   display: block;
   margin: 0 auto;
   text-align: center;
-  background-color: #eee;
+  background-color: white;
+  border-color: white ;
+  border-bottom-color: red ;
   font-family: sans-serif;
   font-size: 73%;
+  font-weight: 600;
+  color: black;
 }
 #ListMenu {
-  width: 100%;
+  width: 40%;
   height: 27px;
-  max-width: none;
+  min-width: 600px;
   display: block;
   margin: 0 auto;
   text-align: center;
-  background-color: #eee;
+  background-color: white;
+  border-color: white ;
+  border-bottom-color: red ;
   font-family: sans-serif;
   font-size: 73%;
-}
+  font-weight: 600;
+  color: black;
+} 
 
 .embed-container {
-  height: 78vh;
-  width: 99.5%; 
+  height: 81vh;
+  width: 99.5%;
+  padding-top: 5px;
 }
 
 .embed-container iframe,
