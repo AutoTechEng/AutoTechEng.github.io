@@ -191,9 +191,9 @@ footer {
   line-height: 0px;
 }
 #DocumentMenu {
-  width: 40%;
+  width: 90%;
   height: 27px;
-  min-width: 600px;
+  max-width: 700px;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -206,9 +206,9 @@ footer {
   color: black;
 }
 #CalculMenu {
-  width: 40%;
+  width: 90%;
   height: 27px;
-  min-width: 600px;
+  max-width: 700px;
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -220,10 +220,11 @@ footer {
   font-weight: 600;
   color: black;
 }
+
 #ListMenu {
-  width: 40%;
+  width: 90%;
   height: 27px;
-  min-width: 600px;
+  max-width: 700px;
   display: block;
   margin: 0 auto;
   text-align: center;
