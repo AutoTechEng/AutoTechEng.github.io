@@ -31,8 +31,8 @@ h2 {
 }
 h3 {
   object-fit: cover;
-  font-weight: 800;
-  font-size: large;
+  font-weight: 600;
+  font-size: medium;
   color: black;
   margin-left: auto;
   margin-right: auto;
@@ -62,7 +62,7 @@ h4 {
 p {
   object-fit: cover;
   font-weight: 400;
-  font-size: large;
+  font-size: medium;
   color: black;
   margin-left: auto;
   margin-right: auto;
@@ -72,7 +72,7 @@ p {
 
 li {
   font-weight: 400;
-  font-size: large;
+  font-size: medium;
 }
 
 .bullet-list {
