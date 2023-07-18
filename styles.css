@@ -69,6 +69,24 @@ p {
   padding-bottom: 5px;
   width:  70%;
 }
+
+li {
+  font-weight: 400;
+  font-size: large;
+}
+
+.bullet-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bullet-list li::before {
+  content: "•"; /* Unicode bullet character */
+  display: inline-block;
+  width: 1em; /* Adjust the width as needed */
+  margin-left: -1em; /* Adjust the margin as needed */
+}
+
 input {
   background-color: rgb(241, 236, 236);
   border-width: 30%;

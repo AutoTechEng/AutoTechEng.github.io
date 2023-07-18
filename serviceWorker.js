@@ -1,4 +1,4 @@
-const staticCacheName = "cache-v005";
+const staticCacheName = "cache-v007";
 const assets = ["/", "/index.html"];
 
 // ajout fichiers en cache
