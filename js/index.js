@@ -154,7 +154,7 @@
      
      
      // Add an event Listener to the dropdown element
-     FIAdropdown.addEventFIAener("change", openCalculTab);
+     FIAdropdown.addEventListener("change", openFIATab);
      
      // Function to show the selected tab content and hide the rest
      function openFIATab(event) {
