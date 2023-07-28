@@ -1562,7 +1562,12 @@ const PDFViewerApplication = {
 };
 exports.PDFViewerApplication = PDFViewerApplication;
 {
-  const HOSTED_VIEWER_ORIGINS = ["null", "http://mozilla.github.io", "https://mozilla.github.io"];
+  var LOCAL_AUTO_DETECT_ORIGIN = window.location.origin;
+
+  var HOSTED_VIEWER_ORIGINS = ['null', 'http://mozilla.github.io', 'https://mozilla.github.io', 'https://www.fia.com', 'https://www.fia.com', 'https://cors-anywhere.herokuapp.com'];
+
+  HOSTED_VIEWER_ORIGINS.push(LOCAL_AUTO_DETECT_ORIGIN);
+
   var validateFileURL = function (file) {
     if (!file) {
       return;
