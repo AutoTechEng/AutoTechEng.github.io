@@ -36,36 +36,36 @@
  // DOCUMENT DROPDOWN //
 
     // Get the dropdown element and the tab content elements
-    const dropdown = document.getElementById("DocumentMenu");
-    const tabContents = document.getElementsByClassName("DocumentTabContent");
+const dropdown = document.getElementById("DocumentMenu");
+const tabContents = document.getElementsByClassName("DocumentTabContent");
 
-    // Hide all the tab content elements except the first one
-    for (let i = 1; i < tabContents.length; i++) {
-        tabContents[i].style.display = "none";
-    }
+// Hide all the tab content elements except the first one
+for (let i = 1; i < tabContents.length; i++) {
+    tabContents[i].style.display = "none";
+}
 
-    // Show the first tab content element
-    tabContents[0].style.display = "block";
+// Show the first tab content element
+tabContents[0].style.display = "block";
 
 
-    // Add an event listener to the dropdown element
-    dropdown.addEventListener("change", openDocumentTab);
+// Add an event listener to the dropdown element
+dropdown.addEventListener("change", openDocumentTab);
 
-    // Function to show the selected tab content and hide the rest
-    function openDocumentTab(event) {
-        // Get the selected value from the dropdown
-        const selectedValue = event.target.value;
+// Function to show the selected tab content and hide the rest
+function openDocumentTab(event) {
+    // Get the selected value from the dropdown
+    const selectedValue = event.target.value;
 
-        // Loop through all the tab content elements and hide them except the selected one
-        for (let i = 0; i < tabContents.length; i++) {
-            const selectedNum = selectedValue.match(/\d+/)[0];
-            if (tabContents[i].id === `DocumentTab${selectedNum}`) {
-                tabContents[i].style.display = "block";
-            } else {
-                tabContents[i].style.display = "none";
-            }
+    // Loop through all the tab content elements and hide them except the selected one
+    for (let i = 0; i < tabContents.length; i++) {
+        const selectedNum = selectedValue.match(/\d+/)[0];
+        if (tabContents[i].id === `DocumentTab${selectedNum}`) {
+            tabContents[i].style.display = "block";
+        } else {
+            tabContents[i].style.display = "none";
         }
     }
+}
 
 
 // List DROPDOWN //
@@ -102,9 +102,10 @@
         }
     }
     
+ 
+ 
 
-    
-// Caclulation DROPDOWN //
+ // Caclulation DROPDOWN //
 
     // Get the dropdown element and the tab content elements
    const calcdropdown = document.getElementById("CalculMenu");
@@ -138,39 +139,6 @@
     }
 
 
- // FIA DROPDOWN //
-
-    // Get the dropdown element and the tab content elements
-    const FIAdropdown = document.getElementById("FIAMenu");
-    const FIAtabContents = document.getElementsByClassName("FIATabContent");
-     
-     // Hide all the tab content elements except the first one
-     for (let i = 1; i < FIAtabContents.length; i++) {
-         FIAtabContents[i].style.display = "none";
-     }
-     
-     // Show the first tab content element
-     FIAtabContents[0].style.display = "block";
-     
-     
-     // Add an event Listener to the dropdown element
-     FIAdropdown.addEventListener("change", openFIATab);
-     
-     // Function to show the selected tab content and hide the rest
-     function openFIATab(event) {
-         // Get the selected value from the dropdown
-         const selectedValue = event.target.value;
-     
-        // Loop through all the tab content elements and hide them except the selected one
-        for (let i = 0; i < FIAtabContents.length; i++) {
-            const selectedNum = selectedValue.match(/\d+/)[0];
-            if (FIAtabContents[i].id === `FIATab${selectedNum}`) {
-                FIAtabContents[i].style.display = "block";
-            } else {
-                FIAtabContents[i].style.display = "none";
-            }
-        }
-    }
 
 
 // CALCULATIONS // 
